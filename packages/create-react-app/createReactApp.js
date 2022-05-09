@@ -1102,6 +1102,7 @@ function executeNodeScript({ cwd, args }, data, source) {
 }
 
 function checkForLatestVersion() {
+  return Promise.resolve(undefined)
   return new Promise((resolve, reject) => {
     https
       .get(
